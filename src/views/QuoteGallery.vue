@@ -28,7 +28,7 @@ const { reObserver } = useLozad('img.lozad')
 const { isShowDialog, selectedQuote, showDialog, closeDialog } = useDialog()
 
 const isEmpty = computed(() => (quotes.value.length === 0 && quotesIndex.value === 0))
-
+//returns quotes from functions
 function loadQuotes() {
   if (quotesIndex.value > (quotesChunked.length - 1)) return
 
